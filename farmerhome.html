@@ -1,0 +1,51 @@
+<?php require('farmerhome.php'); ?>
+<?php require('profile_info.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link rel="stylesheet" href="farmerhome.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+</head>
+<body>
+<header>
+<nav id="navbar">
+<a href="#"><i class="material-icons" title="Home" style="color:grey">home</i></a>
+<a href="#"><span class="glyphicon glyphicon-grain" title="Crops"></span></a>
+<a href="hire.html"><i class="fa fa-users" title="Labours"></i></a>
+<a href="sellcrops.html"><i class="material-icons" title="Sell Crops">monetization_on</i></a>
+</nav>
+</header>
+<div id="main">
+<div id="userprofile">
+<span class="profilehead">Profile Info</span><br>
+<span style="font-size:25px;display:none" class="smiley">🙂</span><span class="smiley" style="font-size:25px;display:none">😁</span>
+<hr><br>
+<label>Name</label><p><?php echo $firstname ." ".$lastname; ?></p><br>
+<label><i class="fa fa-user"></i></label><p><?php echo $username; ?></p><br>
+<label><i class="fa fa-child"></i></label><p><?php echo $dob; ?></p><br>
+<label>Password</label><p><button onclick="payment" style="border:none;background-color:transparent"><i style="cursor:pointer" class="fa fa-credit-card"></p></i></button><br>
+</div>
+</div>
+<script>
+var sm=document.getElementsByClassName('smiley');
+var index=0;
+change();
+function change(){
+var i;
+for(i=0;i<sm.length;i++){
+sm[i].style.display='none';
+}
+index++;
+if(index>sm.length){index=1;}
+sm[index-1].style.display='block';
+setTimeout(change,1000);
+}
+</script>
+</body>
+</html>

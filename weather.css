@@ -1,0 +1,117 @@
+body{
+	margin:0;
+	width:100%;
+	height:100%;
+}
+
+header{
+	margin-top:0;
+	clear:both;
+	width:100%;
+}
+ #navbar{
+	 display:-webkit-flex;
+	 flex:1;
+	 flex-direction:row;
+	 position:fixed;
+	 z-index:999;
+	 justify-content:space-around;
+	 background-color:black;
+	 box-shadow:0 5px 5px grey;
+	 width:100%;
+	 overflow:hidden;
+ }
+ 
+ #navbar a{
+	 text-decoration:none;
+	 padding:15px;
+	 font-size:25px;
+	 color:white;
+ }
+ 
+ 
+ #main{
+	position:absolute;
+	height:calc(100% - 11%);
+	width:100%;
+	top:70px;
+	background-color:lightblue;
+ }
+ 
+ #CurrentLocation{
+	 display:-webkit-flex;
+	 flex:1;
+	 flex-direction:column;
+	 margin-top:100px;
+	 margin-left:100px;
+	 width:350px;
+	 height:400px;
+	 background-color:lightgrey;
+	 border-radius:2px;
+	 color:white;
+	 box-shadow:0 0 5px grey;
+ }
+ 
+ 
+ #weatherhead{
+	 position:relative;
+	 width:100%;
+	 background-color:green;
+	 height:50px;
+	 text-align:center;
+	 font-size:25px;
+	 padding:6px;
+	 box-shadow:0 2px 5px grey;
+ }
+ 
+ #weathericon{
+	 position:relative;
+	 width:100%;
+	 height:60px;
+ }
+ 
+ #weathericon img{
+	 position:relative;
+	 width:100%;
+	 height:100%;
+	 margin-top:20px;
+ }
+ 
+ #infohead{
+	position:relative;
+	color:snow;
+	margin-left:20px;
+	top:40px;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:0 0 2px grey;
+ }
+ 
+ #temperature{
+	position:relative;
+	color:snow;
+	margin-left:20px;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:0 0 2px grey;
+ }
+ 
+ #summary{
+	position:relative;
+	color:snow;
+	top:40px;
+	margin-left:20px;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:0 0 2px grey;
+ }
+ 
+ #position{
+	position:relative;
+	color:snow;
+	top:40px;
+	margin-left:20px;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow:0 0 2px grey;
+ }

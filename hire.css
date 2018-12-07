@@ -1,0 +1,163 @@
+body{
+	margin:0;
+	width:100%;
+	height:100%;
+}
+
+header{
+	margin-top:0;
+	clear:both;
+	width:100%;
+}
+ #navbar{
+	 display:-webkit-flex;
+	 flex:1;
+	 flex-direction:row;
+	 position:fixed;
+	 z-index:999;
+	 justify-content:space-around;
+	 background-color:black;
+	 box-shadow:0 5px 5px grey;
+	 width:100%;
+	 top:0;
+	 margin-top:0;
+	 overflow:hidden;
+ }
+ 
+ #navbar a{
+	 text-decoration:none;
+	 padding:15px;
+	 font-size:25px;
+	 color:white;
+ }
+ 
+ 
+ #main{
+	width:100%;
+	height:100%;
+	top:60px;
+ }
+
+
+#labourinfobox{
+	display:-webkit-flex;
+	position:absolute;
+	flex:1;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-around;
+	margin-left:50px;
+	margin-top:100px;
+	height:50px;
+	width:calc(100% - 110px);
+	border-radius:5px 5px 5px 5px;
+	background-color:blue;
+	font-size:15px;
+	color:white;
+	font-family:sans-serif;
+	box-shadow:0px 3px 5px grey;
+	animation:show 0.7s linear;
+}
+
+@keyframes show{
+	from{margin-top:-100px}
+	to{margin-left:100px}
+}
+
+
+
+#rating{
+	color:white;
+	background-color:red;
+	text-align:center;
+	border-radius:5px 5px 5px 5px;
+	width:100px;
+	height:40px;
+	border:none;
+	outline-color:red;
+}
+
+
+#rating:hover{
+	cursor:pointer;
+	opacity:0.8;
+}
+
+#hirealert{
+	display:none;
+	position:absolute;
+	z-index:999;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	margin:auto;
+	width:400px;
+	height:200px;
+	border-radius:10px;
+	background-color:white;
+	box-shadow:0px 0px 5px blue;
+	animation:show 0.3s linear;
+}
+
+
+@keyframes show{
+	from{transform:scale(0);}
+	to{transform:scale(1);}
+}
+
+
+
+#hirealert span{
+	position:relative;
+	top:45px;
+	margin-left:calc(50% - 23%);
+	font-size:16px;
+}
+
+#hirealert #yes{
+	position:relative;
+	background-color:white;
+	border:1px solid lightgrey;
+	width:55px;
+	height:35px;
+	border-radius:5px;
+	margin-top:20px;
+	margin-left:120px;
+}
+
+#hirealert #yes:hover{
+	cursor:pointer;
+	background-color:lightgrey;
+	color:snow;
+}
+
+#hirealert #no{
+	position:relative;
+	background-color:white;
+	border:1px solid lightgrey;
+	top:-35px;
+	margin-left:250px;
+	width:55px;
+	height:35px;
+	border-radius:5px;
+}
+
+#hirealert #no:hover{
+	cursor:pointer;
+	background-color:lightgrey;
+	color:snow;
+}
+
+#firsthire{
+	position:relative;
+	margin-top:60px;
+	margin-left:110px;
+	padding:5px;
+	width:200px;
+	border:1px dashed grey;
+}
+
+#firsthire::placeholder{
+	padding:5px;
+}

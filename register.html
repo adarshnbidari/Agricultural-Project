@@ -1,0 +1,23 @@
+<?php require('register.php'); ?>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="register.css" />
+</head>
+<body>
+<form action="register.html" method="post" autocomplete="off">
+<input id="first" type="text" name="first" placeholder="Enter firstname" required />
+<input id="last" type="text" name="last" placeholder="Enter lastname" required /><br>
+<input id="usr" type="username" name="usr" placeholder="Enter username" required />
+<input id="pwd1" type="password" name="pwd" placeholder="Enter password" required /><br>
+<input id="dob" type="number" name="date"  placeholder="Enter your birth year" required /><br> 
+<select name="position" id="pos" required >
+<option disabled selected>Position</option>
+<option value="farmer">Farmer</option>
+<option value="labour">Labour</option>
+</select><br>
+<button type="submit" id="register" name="register">Register</button>
+</form>
+<a id="haveac" href="index.html">Already have a account?</a>
+</body>
+</html>

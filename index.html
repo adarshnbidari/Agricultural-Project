@@ -1,0 +1,53 @@
+<?php require('login.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<div id="container">
+<img id="ams" src="AMS-color.png" alt="ams" />
+<form action="index.html" method="post" autocomplete="off">
+<input  title="Enter username"  name="usr" onblur="check1()" type="username" name="username" id="usr" placeholder="Enter Username" required /><br>
+<input 	title="Enter password"  name="pwd" onblur="check2()" type="password" name="password" id="pwd" placeholder="Enter password" required /><br>
+<button  title="Login" id="login" name="login" type="submit">Login</button>
+<br>
+<a href="register.html">Don't have a account?...</a>
+</form>
+</div>
+<script>
+var usr=document.getElementById('usr');
+var pwd=document.getElementById('pwd');
+var btn=document.getElementById('login');
+function check1(){
+if(usr.value==''){
+usr.style.borderColor='red';
+btn.style.opacity='0.6';
+btn.style.cursor='not-allowed';
+btn.title='Please fill all the details';
+}
+}
+
+function check2(){
+if(pwd.value==''){
+pwd.style.borderColor='red';
+btn.style.opacity='0.6';
+btn.style.cursor='not-allowed';
+btn.title='Please fill all the details';
+}
+}
+
+function check(){
+if(usr.value!='' && pwd.value!=''){
+usr.style.borderColor='grey';
+pwd.style.borderColor='grey';
+btn.style.opacity='1';
+btn.style.cursor='pointer';
+}
+}
+setInterval(check,1);
+</script>
+</body>
+</html>

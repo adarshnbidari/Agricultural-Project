@@ -1,0 +1,158 @@
+body{
+	margin:0;
+	background-image:url("reg.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+form{
+	display:-webkit-flex;
+	flex:1;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+	position:absolute;
+	z-index:999;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	background-color:white;
+	border-radius:5px;
+	box-shadow:0 0 5px grey;
+	width:500px;
+	height:450px;
+}
+
+#first{
+	margin-top:50px;
+	width:calc(100% - 20%);
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+}
+
+
+#first:focus{
+	border-bottom:1px solid blue;
+}
+
+#first::placeholder{
+	padding:5px;
+}
+
+
+#last{
+	margin-top:20px;
+	width:calc(100% - 20%);
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+}
+
+#last:focus{
+	border-bottom:1px solid blue;
+}
+
+#usr{
+	margin-top:-10px;
+	width:calc(100% - 20%);
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+}
+
+#usr:focus{
+	border-bottom:1px solid blue;
+}
+
+#pos{
+	width:100px;
+	height:35px;
+	padding:5px;
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+	cursor:pointer;
+}
+
+#pos:focus{
+	border-bottom:1px solid blue;
+}
+
+#pwd1{
+	margin-top:20px;
+	width:calc(100% - 20%);
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+}
+
+#pwd1:focus{
+	border-bottom:1px solid blue;
+}
+
+#dob{
+	margin-top:-10px;
+	width:calc(100% - 20%);
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+}
+
+#dob:focus{
+	border-bottom:1px solid blue;
+}
+
+#register{
+	display:block;
+	width:calc(100% - 10%);
+	margin-bottom:20px;
+	padding:5px;
+	color:white;
+	background-color:green;
+	border:none;
+	font-size:20px;
+	cursor:pointer;
+	box-shadow:0 2px 5px grey;
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	transition:1s;
+	outline:none;
+}
+
+#register:focus{
+	border-bottom:1px solid blue;
+}
+
+#register:hover{
+	opacity:0.8;
+}
+
+#haveac{
+	padding:5px;
+	margin-left:600px;
+	position:absolute;
+	bottom:40px;
+	width:160px;
+	text-decoration:none;
+	height:20px;
+	color:white;
+	background-color:blue;
+	border-radius:10px;
+}

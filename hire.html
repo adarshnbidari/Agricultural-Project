@@ -1,0 +1,45 @@
+<?php session_start(); ?>
+<?php require('hire.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Homepage</title>
+<link rel='stylesheet' href='hire.css' />
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<header>
+<nav id='navbar'>
+<a href='farmerhome.html'><i class='material-icons' title='Home'>home</i></a>
+<a href='#'><span class='glyphicon glyphicon-grain' title='Crops'></span></a>
+<a href='#'><i class='fa fa-users' title='Labours' style='color:grey'></i></a>
+<a href='sellcrops.html'><i class='material-icons' title='Sell Crops'>monetization_on</i></a>
+</nav>
+</header>
+<div id='main'>
+<div id='hirealert'>
+<span>Are you sure to hire this labour!</span><br><br>
+<form action="hire.html" method="post" autocomplete="off">
+<input type="text" id="firsthire" name="firsthire" placeholder="confirm by name" required /><br>
+<button id='yes' name='hire'>Yes</button>
+</form>
+<button onclick='disappear()' id='no'>Cancel</button>
+</div>
+<?php require('viewlabours.php'); ?>
+<script>
+var hirealert=document.getElementById('hirealert');
+
+function showalert(){
+hirealert.style.display='block';
+}
+
+function disappear(){
+hirealert.style.display='none';
+}
+</script>
+</div>
+<body>
+</body>
+</html>

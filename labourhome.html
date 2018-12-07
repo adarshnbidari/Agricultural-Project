@@ -1,0 +1,51 @@
+<?php session_start(); ?>
+<?php require('profile_info.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link rel="stylesheet" href="labourhome.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+</head>
+<header>
+<nav id="navbar">
+<a href="#"><i class="material-icons" title="Home" style="color:grey">home</i></a>
+<a href="weather.html"><span class="glyphicon glyphicon-tint" title="Weather"></span></a>
+<a href="work.html"><i class="fas fa-hammer" title="Work" ></i></a>
+<a href="tools.html"><i class="fas fa-toolbox" title="Tools"></i></a>
+</nav>
+</header>
+<div id="main">
+<div id="userprofile">
+<span class="profilehead">Profile Info</span><br>
+<span style="font-size:25px;display:none" class="smiley">💪</span><span class="smiley" style="font-size:25px;display:none">😎</span>
+<hr><br>
+<label>Name</label><p><?php echo $firstname." ".$lastname; ?></p><br>
+<label><i class="fa fa-user"></i></label><p><?php echo $username; ?></p><br>
+<label><i class="fa fa-child"></i></label><p><?php echo $dob; ?></p><br>
+<label>Password</label><p><button onclick="payment" style="border:none;background-color:transparent"><i style="cursor:pointer" class="fa fa-credit-card"></p></i></button><br>
+</div>
+</div>
+<script>
+var sm=document.getElementsByClassName('smiley');
+var index=0;
+change();
+function change(){
+var i;
+for(i=0;i<sm.length;i++){
+sm[i].style.display='none';
+}
+index++;
+if(index>sm.length){index=1;}
+sm[index-1].style.display='block';
+setTimeout(change,1000);
+}
+</script>
+</div>
+<body>
+</body>
+</html>

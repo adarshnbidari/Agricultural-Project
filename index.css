@@ -1,0 +1,96 @@
+body{
+	margin:0;
+	background-image:url('summer-2391348_960_720.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	width:100%;
+	height:100%;
+	background-size:cover;
+}
+#container{
+	display:-webkit-flex;
+	flex:1;
+	justify-content:center;
+	align-content:center;
+	margin:auto;
+	position:absolute;
+	z-index:999;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background-color:white;
+	width:500px;
+	border-radius:10px;
+	box-shadow:2px 2px 5px grey;
+	height:500px;
+}
+
+
+#usr{
+	display:relative;
+	margin-top:200px;
+	width:350px;
+	height:35px;
+	text-indent:5px;
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	outline:none;
+	font-size:18px;
+}
+
+#usr:focus{
+	border-bottom:2px solid orange;
+}
+
+#usr::placeholder{
+	font-size:18px;
+	padding:5px;
+}
+
+#pwd{
+	display:relative;
+	margin-top:50px;
+	width:350px;
+	height:35px;
+	text-indent:5px;
+	padding:5px;
+	border:none;
+	border-bottom:1px solid grey;
+	outline:none;
+	font-size:18px;
+}
+
+#pwd::placeholder{
+	font-size:18px;
+	padding:5px;
+}
+
+#pwd:focus{
+	border-bottom:2px solid orange;
+}
+
+#login{
+	display:block;
+	margin-top:50px;
+	width:100%;
+	height:40px;
+	outline:none;
+	border:none;
+	box-shadow:0 3px 5px grey;
+	background-color:green;
+	color:white;
+	border-radius:5px;
+}
+
+#login:hover{
+	cursor:pointer;
+}
+
+#ams{
+	position:absolute;
+	width:200px;
+	height:150px;
+	margin-top:30px;
+}

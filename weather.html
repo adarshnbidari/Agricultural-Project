@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link rel="stylesheet" href="weather.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<header>
+<nav id="navbar">
+<a href="labourhome.html"><i class="material-icons" title="Home">home</i></a>
+<a href="#"><span class="glyphicon glyphicon-tint" title="Weather" style="color:grey"></span></a>
+<a href="work.html"><i class="fas fa-hammer" title="Work" ></i></a>
+<a href="tools.html"><i class="fas fa-toolbox" title="Tools"></i></a>
+</nav>
+</header>
+<div id="main">
+<div id="CurrentLocation">
+<div id="weatherhead">Weather</div>
+<div id="weathericon"><img src="rainy.svg" alt="image not available"></div>
+<div id="weatherinfo">
+<span id="infohead">Temparature:<span>
+<span id="temperature"></span><br>
+<span id="infohead">Summary:</span>
+<span id="summary"></span><br><br>
+<span id="infohead">Position:</span>
+<span id="position"></span>
+</div>
+</div>
+</div>
+<script src="weather.js"></script>
+<body>
+</body>
+</html>
