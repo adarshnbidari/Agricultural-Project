@@ -3,7 +3,7 @@ session_start();
 
 $error=0;
 
-$db=mysqli_connect('localhost','root','belagaum@1998','agricultural_project');
+$db=mysqli_connect('localhost','root','','agricultural_project');
 
 if(isset($_POST['register'])){
 
