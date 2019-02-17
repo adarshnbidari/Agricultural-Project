@@ -1,6 +1,6 @@
 <?php
 
-$db=mysqli_connect("localhost","root","belagaum@1998","agricultural_project");
+$db=mysqli_connect("localhost","root","","agricultural_project");
 
 $get_details="SELECT * FROM labours_info";
 $sql_get_details=mysqli_query($db,$get_details);

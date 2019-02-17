@@ -39,7 +39,7 @@ if(!isset($_SESSION['position'])){
 	header("Location: index.html");
 }
 
-$conn=mysqli_connect('localhost','root','belagaum@1998','agricultural_project');
+$conn=mysqli_connect('localhost','root','','agricultural_project');
 
 if(isset($_SESSION['username'])){
 	$f_usr=$_SESSION['username'];

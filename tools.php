@@ -1,6 +1,6 @@
 <?php
 
- $db=mysqli_connect("localhost","root","belagaum@1998","agricultural_project");
+ $db=mysqli_connect("localhost","root","","agricultural_project");
  
  $error=0;
  
